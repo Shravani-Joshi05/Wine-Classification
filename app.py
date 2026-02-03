@@ -39,8 +39,8 @@ st.sidebar.info("Developed for ML Deployment Demo")
 # ---------------- LOAD DATA ----------------
 data = pd.read_csv("wine.csv")
 
-X = data.drop("Class", axis=1)
-y = data["Class"]
+X = data.drop("WineClass", axis=1)
+y = data["WineClass"]
 
 if show_data:
     st.subheader("📄 Dataset Preview")
