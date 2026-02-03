@@ -37,13 +37,7 @@ st.sidebar.markdown("---")
 st.sidebar.info("Developed for ML Deployment Demo")
 
 # ---------------- LOAD DATA ----------------
-import os
-
-BASE_DIR = os.path.dirname(__file__)
-DATA_PATH = os.path.join(BASE_DIR, "wine.csv")
-
-data = pd.read_csv(DATA_PATH)
-
+data = pd.read_csv("wine.csv")
 
 X = data.drop("Class", axis=1)
 y = data["Class"]
